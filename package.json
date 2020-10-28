@@ -1,0 +1,23 @@
+{
+  "name": "websockets",
+  "version": "1.0.0",
+  "description": "Going to use ws: a Node.js WebSocket library -  https://www.npmjs.com/package/ws",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeldmyers/websockets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joeldmyers/websockets/issues"
+  },
+  "homepage": "https://github.com/joeldmyers/websockets#readme",
+  "dependencies": {
+    "ws": "^7.3.1"
+  }
+}
