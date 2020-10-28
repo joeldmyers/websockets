@@ -12,10 +12,10 @@ wss.on("connection", function connection(ws) {
   ws.on("message", function incoming(message) {
     console.log("received %s", message);
     ws.send(`Got your message, it's: ${message}`);
-  }
+  });
   
 });
 
 app.get("/", (req, res) => res.send("Hello World"));
 
-server.listen(3000, () => console.log("Listening on port 3000"));
+server.listen(3005, () => console.log("Listening on port 3005"));
