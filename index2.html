@@ -6,6 +6,25 @@
   <title>Websocket Demo</title>
 </head>
 <body>
+  <button onclick="sendMessage()">Send message</button>
   
+  <script>
+    const socket = new WebSocket("ws://localhost:3005");
+
+    // Connection Opened
+    socket.addEventListener("open", function(event) {
+      console.log("connected to websocket server");
+    });
+
+    // Listen for messages
+
+    socket.addEventListener("message", function(event) {
+      console.log("Message from server", event.data);
+    });
+
+    const sendMessage = () => {
+      socket.send("Hello from Client 2");
+    }
+  </script>>
 </body>
 </html>
